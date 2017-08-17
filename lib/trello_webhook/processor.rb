@@ -5,7 +5,7 @@ module TrelloWebhook::Processor
   extend ActiveSupport::Concern
 
   included do
-    before_action :authenticate_trello_request!, only: :create
+  #    before_action :authenticate_trello_request!, only: :create
   end
 
   class SignatureError < StandardError; end
